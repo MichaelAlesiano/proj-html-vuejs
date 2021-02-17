@@ -1,0 +1,178 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: #e9e6e3;
+}
+
+.header-nav {
+  width: 70%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-logo img {
+  width: 50%;
+}
+
+.header-menu {
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-end;
+}
+
+.header-menu li {
+  padding-right: 30px;
+  color: #513e5e;
+}
+
+.header-menu li i {
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+.header-nav-right {
+  position: relative;
+}
+
+.header-nav-right i {
+  font-size: 18px;
+  padding-right: 20px;
+}
+
+.header-nav-right input {
+  padding: 16px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.header-nav-right i.cerca {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 88%;
+  transform: translateY(-50%);
+  color: #22ae97;
+}
+
+/* Jumbotron */
+.jumbotron {
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+
+.jumbotron img.background {
+  margin-top: 250px;
+  height: 450px;
+  position: absolute;
+  transform: scaleY(-1);
+  width: 100%;
+}
+
+.jumbotron-left {
+  width: 70%;
+  margin: auto;
+}
+
+.jumbotron-cta {
+  width: 20%;
+  padding-top: 100px;
+  position: absolute;
+}
+
+.jumbotron-cta h2 {
+  font-size: 40px;
+  color: #513e5e;
+}
+
+.jumbotron-cta p {
+  padding-top: 22px;
+  line-height: 1.6;
+  color: #908da5;
+}
+
+.jumbotron-cta button {
+  background-color: #20ad96;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 35px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.jumbotron-man {
+  position: absolute;
+  top: 50%;
+  left: 55.5%;
+  transform: translateY(-50%);
+}
+
+/* Main */
+/* Box build dream */
+
+.box-build-dream {
+  width: 100%;
+  height: 300px;
+}
+
+.box-build-dream p {
+  text-align: center;
+  text-transform: uppercase;
+  color: grey;
+  padding-top: 50px;
+  font-size: 18px;
+}
+
+.box-build-dream h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 40px;
+  color: #513e5e;
+}
+
+.box-build-dream span {
+  text-transform: uppercase;
+  color: #22ad96;
+}
+
+.four-dream {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 70%;
+}
+
+.dream {
+  padding-top: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(70% / 4);
+}
+
+.dream p {
+  text-transform: none;
+}
