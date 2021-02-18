@@ -13,6 +13,19 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+button {
+  background-color: #20ad96;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 35px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
 /* Header */
 header {
   width: 100%;
@@ -54,6 +67,18 @@ header {
 .header-nav-right i {
   font-size: 18px;
   padding-right: 20px;
+  position: relative;
+}
+
+.header-nav-right span {
+  position: absolute;
+  left: 5%;
+  top: 9%;
+  font-size: 13px;
+  color: white;
+  padding: 1px 3px;
+  background-color: #22ae97;
+  border-radius: 100%;
 }
 
 .header-nav-right input {
@@ -110,19 +135,6 @@ header {
   color: #908da5;
 }
 
-.jumbotron-cta button {
-  background-color: #20ad96;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 20px 40px;
-  text-align: center;
-  font-size: 16px;
-  margin-top: 35px;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
 .jumbotron-man {
   position: absolute;
   top: 50%;
@@ -135,7 +147,7 @@ header {
 
 .box-build-dream {
   width: 100%;
-  height: 300px;
+  height: 700px;
 }
 
 .box-build-dream p {
@@ -173,6 +185,587 @@ header {
   width: calc(70% / 4);
 }
 
-.dream p {
+.dream h3 {
+  padding-top: 20px;
+}
+
+.dream span {
+  text-align: center;
   text-transform: none;
+  color: grey;
+  padding-top: 20px;
+}
+
+.dream span.start {
+  color: #513e5e;
+}
+
+.dream span.start i {
+  font-size: 20px;
+  padding-left: 8px;
+}
+
+/* Box construct */
+.box-construct {
+  height: 700px;
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+
+.box-construct-left {
+  height: 100%;
+  width: 50%;
+  background-image: url("../underlay-shape-lilla.svg");
+  background-repeat: no-repeat;
+  background-size: 60% 100%;
+}
+
+.box-construct-right {
+  width: 50%;
+}
+
+.box-construct-right p {
+  text-transform: uppercase;
+  color: grey;
+}
+
+.box-construct-right p span {
+  color: black;
+}
+
+.box-construct-right h2 {
+  color: #513e5e;
+  padding-top: 20px;
+  font-size: 45px;
+}
+
+.box-construct-right h2 span {
+  color: #20ad96;
+}
+
+.box-choices {
+  padding-top: 50px;
+}
+
+.header-box-choices {
+  display: flex;
+  height: 50px;
+  color: white;
+  background-color: #22ad96;
+  align-items: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.main-box-choices {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+/* Box counter */
+.box-counter {
+  height: 200px;
+  width: 100%;
+  background-color: #e9e6e3;
+  display: flex;
+  align-items: center;
+}
+
+.box-counters-center {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.counters h3 {
+  color: #22ad96;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.counters span {
+  text-transform: uppercase;
+  color: #513e5e;
+}
+
+/* Box courses */
+.box-courses {
+  width: 100%;
+  background-image: url("../img/jumbo-overlay.svg");
+  background-repeat: no-repeat;
+  background-size: 200% 200%;
+}
+
+.box-courses-center {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.box-courses-center p {
+  text-transform: uppercase;
+  padding-top: 100px;
+  color: grey;
+}
+
+.box-courses-center h2 {
+  margin-top: 20px;
+  font-size: 40px;
+  color: #513e5e;
+}
+
+.box-courses-center span {
+  color: #22ad96;
+}
+
+.box-courses-window {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.box-courses-example {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+  width: calc(94%/3);
+  position: relative;
+}
+
+.box-courses-example .price {
+  position: absolute;
+  padding: 10px;
+  background-color: #22ad96;
+  left: 82.5%;
+  border-radius: 0px 5px;
+}
+
+.box-courses-example .price span {
+  color: white;
+}
+
+.box-courses-example img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.box-courses-example-text {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+.box-courses-example-text h4 {
+  color: grey;
+  margin : 15px 0px;
+}
+
+.box-courses-example-text img {
+  border-radius: 20px;
+}
+
+.box-courses-example-text p {
+  margin-top: 0px;
+  text-transform: none;
+  font-size: 20px;
+  margin-bottom: 40px;
+  padding-top: 0px;
+  font-weight: bold;
+  color: black;
+}
+
+.box-courses-example-text span {
+  color: grey;
+  padding-right: 20px;
+}
+
+.box-courses-example-text span i {
+  padding-right: 10px;
+}
+
+/* Box learn */
+.box-learn {
+  height: 700px;
+  width: 100%;
+}
+
+.box-cta-learn {
+  width: 70%;
+  margin: auto;
+  margin-top: 180px;
+  display: flex;
+}
+
+.box-cta-left {
+  width: 35%;
+}
+
+.box-cta-left .first-title {
+  text-transform: uppercase;
+  color: grey;
+}
+
+.box-cta-left h2 {
+  font-size: 50px;
+  color: #513e5e;
+  margin: 20px 0px;
+}
+
+.box-cta-left span {
+  color: #22ad96;
+}
+
+.box-cta-left p {
+  margin: 15px 0px;
+}
+
+.box-cta-left p i {
+  margin-right: 15px;
+  color: #22ad96;
+}
+
+.box-cta-left button {
+  margin-top: 20px;
+}
+
+.box-cta-right {
+  width: 65%;
+  height: 600px;
+  position: relative;
+  background-image: url("../underlay-shape-grey.svg");
+  background-repeat: no-repeat;
+  background-position: 10% 80%;
+  background-size: 55% 100%;
+}
+
+.box-cta-right .first-img{
+  left: 25%;
+  position: absolute;
+}
+
+.box-cta-right .second-img{
+  left: 65%;
+  top: 54%;
+  position: absolute;
+}
+
+/* Box mobile */
+.box-mobile {
+  width: 100%;
+}
+
+.box-cta-mobile {
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+
+.box-cta-mobile-left {
+  width: 60%;
+  height: 600px;
+  position: relative;
+  background-image: url("../underlay-shape-grey.svg");
+  background-repeat: no-repeat;
+  background-size: 55% 100%;
+}
+
+.box-cta-mobile-left .first-img {
+  top: 36%;
+  right: 94%;
+  position: absolute;
+}
+
+.box-cta-mobile-left .second-img {
+  left: 20%;
+  position: absolute;
+  z-index: 10;
+}
+
+.box-cta-mobile-left .third-img {
+  left: 60%;
+  top: 60%;
+  position: absolute;
+  z-index: 1;
+}
+
+.box-cta-mobile-right {
+  width: 40%;
+  margin-top: 100px;
+}
+
+.box-cta-mobile-right .first-title {
+  text-transform: uppercase;
+  color: grey;
+}
+
+.box-cta-mobile-right h2 {
+  font-size: 45px;
+  color: #513e5e;
+  margin: 20px 0px;
+}
+
+.box-cta-mobile-right span {
+  color: #22ad96;
+}
+
+.box-cta-mobile-right p {
+  line-height: 1.6;
+  color: grey;
+}
+
+/* Box calendar */
+.box-calendar {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.box-calendar-center {
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box-calendar .first-title {
+  text-transform: uppercase;
+  color: grey;
+}
+
+.box-calendar h2 {
+  font-size: 45px;
+  color: #513e5e;
+  margin: 20px 0px;
+}
+
+.box-calendar span {
+  color: #22ad96;
+}
+
+.box-calendar-date {
+  height: 180px;
+  width: calc(98%/2);
+  border-radius: 5px;
+  display: flex;
+  background-color: #f8f8f8;
+  margin: 20px 0px;
+}
+
+.box-calendar-date-left {
+  height: 100%;
+  width: 70%;
+  text-align: left;
+  padding: 30px;
+}
+
+.box-calendar-date-left p:first-child {
+  color: grey;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.box-calendar-date-left p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.box-calendar-date-right {
+  height: 100%;
+  width: 30%;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.box-calendar-date-right span {
+  color: #22ad96;
+  font-size: 50px;
+}
+
+.box-calendar-date-right p {
+  text-transform: uppercase;
+}
+
+.box-calendar-date-right button {
+  margin-top: 10px;
+  padding: 10px 40px;
+}
+
+.box-calendar .last-title {
+  color: grey;
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+
+/* Box clients */
+.box-clients {
+  width: 100%;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.box-clients-centered {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.box-clients .first-title {
+  text-transform: uppercase;
+  color: grey;
+}
+
+.box-clients h2 {
+  font-size: 45px;
+  color: #513e5e;
+  margin: 20px 0px;
+}
+
+.box-clients span {
+  color: #22ad96;
+}
+
+.box-client {
+  display: flex;
+  flex-direction: column;
+  width: calc(95%/3);
+  height: 300px;
+  background-color: white;
+  margin-top: 100px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.box-client img{
+  width: 10%;
+  border-radius: 100%;
+  position: absolute;
+  top: 10%;
+}
+
+.box-client span{
+  margin-top: 100px;
+  padding: 0px 40px;
+  font-size: 16px;
+  color: #513e5e;
+  line-height: 1.6;
+}
+
+.box-client p{
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.box-client small{
+  margin-top: 10px;
+  color: grey;
+}
+
+.client-slider {
+  margin-top: 50px
+}
+
+.client-slider i {
+  padding-right: 10px;
+  font-size: 10px;
+  color: #3f3a64;
+  opacity: 0.6;
+}
+
+.client-slider i:first-child {
+  font-size: 14px;
+  color: #3f3a64;
+  opacity: 1;
+}
+
+.box-client-footer {
+  width: 70%;
+  margin: auto;
+  margin-top: 90px;
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.box-client-footer h2:first-child {
+  font-size: 22px;
+}
+
+.box-client-footer h2 {
+  font-size: 30px;
+}
+
+.box-client-footer button {
+  margin-top: 10px;
+}
+
+.box-client-footer img.first-img {
+  position: absolute;
+  left: 8%;
+  top: 35%;
+}
+
+.box-client-footer img.second-img {
+  position: absolute;
+  left: 85%;
+  top: 30%;
+}
+
+/* Footer */
+.footer-center {
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+
+.footer-center h5{
+  font-size: 18px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.footer-center p {
+  margin-bottom: 15px;
+  color: grey;
+}
+
+.footer-first {
+  width: 40%;
+}
+
+.footer-first i {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-right: 28px;
+  color: grey;
+}
+
+.footer-second,
+.footer-third,
+.footer-fourth {
+  width: 20%;
+}
+
+.footer-third {
+  margin-top: 92px;
+}
+
+.footer-last-title {
+  color: grey;
+  text-align: center;
+  padding: 60px 0px;
 }
