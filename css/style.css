@@ -26,6 +26,20 @@ button {
   border-radius: 8px;
 }
 
+button:hover {
+  background-color: #513e5e;
+  transition: .2s ease;
+}
+
+/* Classi JS */
+.show {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Header */
 header {
   width: 100%;
@@ -205,6 +219,11 @@ header {
   padding-left: 8px;
 }
 
+.dream span.start:hover {
+  color: #22ad96;
+  transition: .2s ease;
+}
+
 /* Box construct */
 .box-construct {
   height: 700px;
@@ -238,14 +257,11 @@ header {
   color: #513e5e;
   padding-top: 20px;
   font-size: 45px;
+  padding-bottom: 50px;
 }
 
 .box-construct-right h2 span {
   color: #20ad96;
-}
-
-.box-choices {
-  padding-top: 50px;
 }
 
 .header-box-choices {
@@ -296,15 +312,14 @@ header {
 /* Box courses */
 .box-courses {
   width: 100%;
-  background-image: url("../img/jumbo-overlay.svg");
-  background-repeat: no-repeat;
-  background-size: 200% 200%;
+  background-color: #f8f8f8;
 }
 
 .box-courses-center {
   width: 70%;
   margin: auto;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .box-courses-center p {
@@ -337,6 +352,13 @@ header {
   margin: 20px 0px;
   width: calc(94%/3);
   position: relative;
+  padding-bottom: 20px;
+}
+
+.box-courses-example:hover {
+  background: white;
+  box-shadow: 2px 2px rgba(0,0,0,0.4);
+  transition: .3s ease;
 }
 
 .box-courses-example .price {
@@ -560,11 +582,16 @@ header {
   margin: 20px 0px;
 }
 
+.box-calendar-date:hover .box-calendar-date-left {
+  border-left: 3px solid #22ad96;
+}
+
 .box-calendar-date-left {
   height: 100%;
   width: 70%;
   text-align: left;
   padding: 30px;
+  border-left: 3px solid transparent;
 }
 
 .box-calendar-date-left p:first-child {
